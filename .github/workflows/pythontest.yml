@@ -1,11 +1,7 @@
 name: Python tests
 
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-  schedule:
-    - cron: "0 6 * * *" # Daily 6AM UTC build
+  workflow_dispatch:
 
 permissions:
   contents: read
